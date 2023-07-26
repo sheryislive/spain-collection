@@ -53,3 +53,16 @@ tl1.to("#part3",{
 tl1.from("#image-container h1",{
   y:400
 })
+
+gsap.to("#main",{
+  backgroundColor:"#fff",
+  scrollTrigger:{
+    trigger:"#page3",
+    scroller:"#main",
+    // markers:true,
+    start:"top 10%",
+    end:"top 5%",
+    pin:true,
+    scrub:3
+  }
+})

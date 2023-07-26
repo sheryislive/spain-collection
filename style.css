@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Saol;
+    src: url(./SaolDisplay-Light.ttf);
+}
+@font-face {
+    font-family: Saol;
+    src: url(./SaolDisplay-LightItalic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Inter;
+    src: url(./Inter-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +23,13 @@ html, body {
     height: 100%;
     width: 100%;
 }
+#main{
+    background-color: black;
+}
 #page1{
     min-height: 100vh;
     width: 100%;
-    /* background-color: rgb(231, 143, 143); */
+    background-color: rgb(255, 255, 255);
     position: relative;
 }
 #nav{
@@ -63,7 +80,7 @@ html, body {
 
 }
 #page1>h3{
-    font-family: Saol display;
+    font-family: Saol;
     font-weight: 100;
     font-size: 2.7vw;
     margin-top: 2vh;
@@ -74,7 +91,7 @@ html, body {
     transform: translateX(-50%);
 }
 #page1>h1{
-    font-family: Saol display;
+    font-family: Saol;
     font-style: italic;
     font-weight: 100;
     font-size: 7vw;
@@ -169,7 +186,7 @@ html, body {
 }
 #image-container>h1{
     position: absolute;
-    font-family: Saol Display;
+    font-family: Saol;
     /* font-style: italic; */
     text-transform: uppercase;
     line-height: 6.5vw;
@@ -184,7 +201,7 @@ html, body {
 }
 #image-container>h1 span{
     color: #bf1826;
-    font-family: Saol Display;
+    font-family: Saol;
     font-style: italic;
 }
 
@@ -192,15 +209,16 @@ html, body {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* background-color: rgb(0, 0, 0); */
+    padding: 20vh 0;
 }
 #page2 #video-container{
     height: 60vh;
     width: 50vw;
     position: relative;
+    /* margin-left: auto; */
+    margin:0 auto;
+    /* margin-right: auto; */
 }
 #video-container video{
     height: 100%;
@@ -230,4 +248,96 @@ html, body {
     font-size: 20px;
     border: 2px solid #ffffff99;
     border-radius: 50%;
+}
+#page2 h5{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#page2 h6{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 5vh 0;
+    
+}
+#page3 h3{
+    color: #bf1826;
+    font-family: inter;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#page3-flex{
+    height: 75vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page3-elem{
+    height: 80%;
+    width: 21%;
+    /* background-color: blue; */
+    position: relative;
+}
+.page3-elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page3-elem .page3-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3-overlay i{
+    padding: 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+}
+#page4 h1{
+    
+    text-align: center;
+    margin: 0 auto;
+    font-family: saol;
+
+    text-transform: uppercase;
+    font-size: 14vw;
+    line-height: 12vw;
+    width: 70%;
+    font-weight: 100;
+}
+#page4 h1 span{
+    font-style: italic;
+    color: #bf1826;
+    text-transform: capitalize;
+    font-family: saol;
 }
